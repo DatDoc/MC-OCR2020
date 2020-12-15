@@ -51,8 +51,8 @@ correctButton.grid(row=4, column=2, columnspan = 3)
 # skipButton.grid(row=4, column=0, columnspan = 3)
 deleteButton.grid(row=4, column=1, columnspan = 3)
 
-root.bind('<Return>', lambda _: correct(2))
-root.bind('<Tab>', lambda _: delete(2))
+root.bind('<Return>', lambda _: correct(start+2))
+root.bind('<Tab>', lambda _: delete(start+2))
 
 def correct(image_number):
     global my_img
